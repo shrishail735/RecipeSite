@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
+.recipe-head{
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190617/ourmid/pngtree-cute-children-s-drawing-style-recipe-book-album-board-vector-background-image_129990.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: "Almendra SC", serif;
+    font-weight: 400;
+    font-style: bold;
+    line-height: normal;
+}
+
+
+/* .almendra-sc-regular {
+    font-family: "Almendra SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  } */

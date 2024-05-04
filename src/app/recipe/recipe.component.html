@@ -1,0 +1,22 @@
+<div class="recipe h-[100%] w-[80%] flex justify-center m-auto flex-col items-center p-5 space-y-2 text-[#647D87] bg-[#FAEF9B]">
+    <h1 class="text-3xl font-bold">{{recipe?.name}}</h1>
+    <img class="w-[400px] h-[400px]" [src]="recipe.image" alt="Recipe Image">
+    <h2 class="text-2xl font-semibold">Ingredients Needed</h2>
+    <div class="flex w-[60%] flex-wrap justify-center">
+        <div *ngFor="let ingredient of recipe?.ingredients">
+            <div class="capsule text-lg rounded-full bg-[#6DA4AA] text-white p-2 m-2 w-max">
+                {{ingredient}}
+            </div>
+        </div>
+    </div>
+   
+    <div class="text-[#6DA4AA]">
+        <h2 class="text-2xl font-semibold">Steps:</h2>
+        <div class="text-xl " *ngFor="let step of recipe?.instructions; index as i"> {{i+1}} {{step}}</div>
+    </div>
+
+    <div class="rating flex space-x-4">
+       <div>Rating : {{recipe.rating}}</div> 
+       <div>Review : {{recipe.reviewCount}}</div>
+    </div>
+</div>
