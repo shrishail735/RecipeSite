@@ -16,7 +16,9 @@
     </div>
 
     <div class="rating flex space-x-4">
-       <div>Rating : {{recipe.rating}}</div> 
+       <div class="flex">Rating : {{recipe.rating}}
+       <app-ratings [rate]="recipe.rating"></app-ratings>
+    </div> 
        <div>Review : {{recipe.reviewCount}}</div>
     </div>
 </div>

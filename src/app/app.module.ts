@@ -8,13 +8,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { RecipeComponent } from './recipe/recipe.component';
 import { FormsModule } from '@angular/forms';
 import { RupeesPipe } from './rupees.pipe';
+import { RatingsComponent } from './ratings/ratings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RecipesComponent,
     RecipeComponent,
-    RupeesPipe
+    RupeesPipe,
+    RatingsComponent
   ],
   imports: [
     BrowserModule,
